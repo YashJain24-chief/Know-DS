@@ -1,0 +1,138 @@
+/* CSS reset */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+/* animated section starts here */
+#animated-section {
+  background: linear-gradient(-45deg, #f65b2c, #cc1b5f, #1685ad, #19b18d);
+  background-size: 400% 400%;
+  animation: gradient 5s ease-in-out infinite;
+  height: 250px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  font-size: 40px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* animated section end here */
+
+/* input-operations section starts here */
+#input-operations {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#input-fields {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#input,
+#inputPosition {
+  margin-top: 5px;
+  background-color: white;
+  color: #1685ad;
+  width: 30%;
+  height: 70px;
+  border-radius: 20px;
+  text-align: center;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  font-size: 20px;
+}
+
+#functionality-parent {
+  margin-top: 30px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.functionality {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  width: 120px;
+  height: 60px;
+  border: none;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  font-size: 17px;
+  border-radius: 10px;
+  color: #19b18d;
+  background-color: white;
+  cursor: pointer;
+}
+.functionality:hover {
+  background-color: #cc1b5f;
+  color: black;
+  background: linear-gradient(-83deg, #f65b2c, #cc1b5f, #1685ad, #19b18d);
+  background-size: 500% 500%;
+  animation: gradient 2s ease-in-out infinite;
+}
+/* input-operations section ends here */
+
+/* linked-list section starts here */
+#all-nodes {
+  height: 130px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.elements {
+  display: flex;
+  align-items: center;
+}
+
+.nodes {
+  width: 80px;
+  height: 50px;
+  background-color: wheat;
+  display: flex;
+  border: 6px solid #1685ad;
+  border-radius: 7px;
+  align-items: center;
+  justify-content: center;
+}
+.data {
+  display: block;
+  color: rgb(0, 0, 0);
+  background-color: wheat;
+}
+.arrow {
+  color: wheat;
+  margin-left: 7px;
+  margin-right: 7px;
+  font-size: 50px;
+}
+
+/* linked-list section ends here */
