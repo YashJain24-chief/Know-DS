@@ -126,7 +126,7 @@ deletePosition.addEventListener("click", () => {
   if (
     input_Position === "" ||
     input_Position < 0 ||
-    input_Position > list.length
+    input_Position > list.length - 1
   ) {
     alert("Please enter a valid position to insert");
     return;
